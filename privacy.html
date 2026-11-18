@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnaCleaner — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.1);
+      --accent: #00E5FF;
+      --accent2: #6366F1;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 48px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-top: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .tagline { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 28px; }
+    .badge {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(0, 229, 255, 0.12);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .card h3 { margin-top: 0; color: #fff; font-size: 1.1rem; }
+    .card p, p, li { color: var(--text-muted); }
+    strong { color: #fff; }
+    a { color: var(--accent); text-decoration: none; }
+    .contact-box {
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .links-section {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .links-section a {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.2);
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Zero Data Collection • 100% On-Device</span>
+    <h1>Privacy Policy for UnaCleaner</h1>
+    <p><em>Effective Date: October 25, 2026 • Last Updated: November 18, 2026</em></p>
+
+    <h2>1. Zero Data Collection (Data Not Collected)</h2>
+    <p><strong>UnaCleaner</strong> (for macOS, iOS, and iPadOS), developed by <strong>Rareș-Mihail Cristea</strong>, does not collect, transmit, store on external servers, sell, or share any personal data.</p>
+    <ul>
+      <li><strong>No Personal Information Collected:</strong> We do not collect names, email addresses, phone numbers, IP addresses, location data, or device identifiers.</li>
+      <li><strong>100% On-Device Processing:</strong> All file scans, SHA-256 duplicate checks, Apple Vision photo quality scoring, HEVC video compression, Live Photo conversions, and Contacts duplicate merging &amp; local vCard (.vcf) backups execute strictly on your device.</li>
+      <li><strong>Zero Third-Party Trackers:</strong> UnaCleaner embeds zero analytics SDKs, zero advertising frameworks, and zero telemetry trackers.</li>
+    </ul>
+
+    <h2>2. In-App Purchases &amp; Subscriptions (Apple StoreKit 2)</h2>
+    <p>Purchases of <strong>UnaCleaner Lifetime License</strong> (<code>com.UnaCleaner.app.lifetime</code>) and <strong>UnaCleaner Annual Plan</strong> (<code>com.UnaCleaner.app.sub.annual</code>) are processed exclusively by Apple via StoreKit 2 under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> and <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard Apple EULA</a>. UnaCleaner verifies cryptographically signed StoreKit 2 transaction states locally on your device.</p>
+
+    <h2>3. App Sandbox &amp; System Permissions</h2>
+    <ul>
+      <li><strong>Photo Library:</strong> Used solely on-device to detect similar photos, screenshots, Live Photos, and large videos for user-confirmed cleanup.</li>
+      <li><strong>Contacts:</strong> Used solely on-device to detect duplicate or incomplete contacts, generate local vCard backups, and merge duplicates upon confirmation.</li>
+      <li><strong>Face ID / Touch ID:</strong> Used solely on-device via Apple LocalAuthentication.</li>
+      <li><strong>macOS User-Selected Folders:</strong> Accessed explicitly via standard macOS open panels and local security-scoped bookmarks.</li>
+    </ul>
+
+    <h2 id="user-privacy-choices">4. Contact &amp; Privacy Inquiries</h2>
+    <p>For any privacy questions (GDPR / CCPA / EU GPSR), contact <strong>Rareș-Mihail Cristea</strong> at <a href="mailto:rares.cristea@ymail.com">rares.cristea@ymail.com</a>.</p>
+
+    <p><a href="index.html">← Back to UnaCleaner Overview</a></p>
+  </div>
+</body>
+</html>
